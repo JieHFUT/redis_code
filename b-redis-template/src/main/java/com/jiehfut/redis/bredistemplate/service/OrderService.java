@@ -4,6 +4,7 @@ package com.jiehfut.redis.bredistemplate.service;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
@@ -17,10 +18,11 @@ public class OrderService {
 
     @Resource
     private RedisTemplate redisTemplate;
+    // private StringRedisTemplate stringRedisTemplate;
 
     // 添加订单信息
     public void addorder() {
-        //
+        // 设置 k-v 值
         int keyId = ThreadLocalRandom.current().nextInt(1000) + 1; // 0-1000
         String serialNo = UUID.randomUUID().toString(); // 7e7f62b8-2bfa-44b2-a0e0-b27545f459ee
 
