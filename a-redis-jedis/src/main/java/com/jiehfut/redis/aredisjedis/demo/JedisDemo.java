@@ -36,5 +36,13 @@ public class JedisDemo {
             System.out.println(s);
         }
 
+        /**
+         考虑到 jedis 连接 redis 服务器，如果在一个高并发的情况下
+         一秒钟八万次写入，需要 new 八万次连接，反复创建线程，消耗资源并且线程不安全 => 考虑使用池化技术
+
+         lettuce 考虑到这个问题，改善后，后面被 springboot 招安
+
+         */
+
     }
 }

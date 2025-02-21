@@ -9,11 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.jiehfut.redis</groupId>
-    <artifactId>a-redis-jedis</artifactId>
+    <artifactId>b-redis-template</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>a-redis-jedis</name>
-    <description>a-redis-jedis</description>
-
+    <name>b-redis-template</name>
+    <description>b-redis-template</description>
     <url/>
     <licenses>
         <license/>
@@ -31,31 +30,8 @@
         <java.version>17</java.version>
     </properties>
     <dependencies>
-        <!--jedis-->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>4.3.1</version>
-        </dependency>
-        <!--lettuce-->
-        <dependency>
-            <groupId>io.lettuce</groupId>
-            <artifactId>lettuce-core</artifactId>
-            <version>6.2.1.RELEASE</version>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
