@@ -17,6 +17,7 @@
     <modules>
         <module>a-redis-jedis</module>
         <module>b-redis-template</module>
+        <module>c-redis-cluster</module>
     </modules>
 
     <properties>
