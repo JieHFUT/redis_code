@@ -27,8 +27,6 @@ public class OrderService {
 
         String key = ORER_KEY + keyId;
         String value = "京东订单" + serialNo;
-
-
         // 调用 API 来设置键值
         redisTemplate.opsForValue().set(key, value);
 
