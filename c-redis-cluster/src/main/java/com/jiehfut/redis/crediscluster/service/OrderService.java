@@ -32,6 +32,8 @@ public class OrderService {
         // 调用 API 来设置键值
         redisTemplate.opsForValue().set(key, value);
 
+
+
         log.info("========= key:{}, value:{} ==========", key, value);
     }
 
