@@ -39,5 +39,4 @@ public class OrderService {
         return (String) redisTemplate.opsForValue().get(ORER_KEY + keyId);
     }
 
-
 }
